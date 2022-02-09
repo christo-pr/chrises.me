@@ -1,7 +1,11 @@
+import { Link } from 'remix'
+
 export function Nav() {
   return (
     <header className="flex justify-between mb-16">
-      <div>logo</div>
+      <div>
+        <Link to={'/'}>logo</Link>
+      </div>
       <div>
         <ul className="flex gap-10">
           <li>Menu 1</li>

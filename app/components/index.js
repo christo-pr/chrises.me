@@ -1,3 +1,5 @@
 export * from './Nav'
 export * from './Button'
 export * from './Decoration'
+export * from './Link'
+export * from './Contact'
