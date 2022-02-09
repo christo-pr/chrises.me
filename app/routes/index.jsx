@@ -1,4 +1,4 @@
-import { DecorableLink } from '~/components'
+import { DecorableLink, Button } from '~/components'
 
 export default function Index() {
   return (
@@ -13,9 +13,7 @@ export default function Index() {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Aspernatur, quaerat alias cumque debitis eius dolores!
           </p>
-          <button className="bg-primary text-black py-3 px-5 mt-3 rounded-sm transition-all shadow-none hover:shadow-purple hover:shadow-slide hover:text-white">
-            Check out
-          </button>
+          <Button primary>Check it out</Button>
         </div>
 
         <div className="flex-1 flex flex-col">
