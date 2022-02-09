@@ -3,10 +3,12 @@ import { DecorableLink, Button } from '~/components'
 export default function Index() {
   return (
     <div className="flex flex-col min-h-full justify-between">
-      <DecorableLink to="/coding">
-        {'=>'}Code{'==='}
+      <DecorableLink to="/coding" decorations={['=>', '==={']}>
+        Code
       </DecorableLink>
-      <DecorableLink to="/projects">Projects</DecorableLink>
+      <DecorableLink to="/projects" decorations={[null, '}..']}>
+        Projects
+      </DecorableLink>
       <div className="flex items-center mt-3">
         <div className="flex flex-col flex-1 pr-5">
           <p className="text-sm font-light mb-10">
@@ -17,7 +19,9 @@ export default function Index() {
         </div>
 
         <div className="flex-1 flex flex-col">
-          <DecorableLink to="/work">Work</DecorableLink>
+          <DecorableLink to="/work" decorations={[null, ' **']}>
+            Work
+          </DecorableLink>
           <DecorableLink to="/surfing">Surfing</DecorableLink>
         </div>
       </div>

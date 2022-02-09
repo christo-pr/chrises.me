@@ -1,9 +1,13 @@
 import { Link } from 'remix'
 
-export function DecorableLink({ children, to, decorations }) {
+export function DecorableLink({ children, to, decorations = [] }) {
+  const [leftDecorations, rightDecorations] = decorations
+
   return (
-    <div className="w-full text-6xl mt-3">
-      <Link to={to}>{children}</Link>
-    </div>
+    <Link to={to} className="w-full text-6xl mt-3">
+      {leftDecorations}
+      {children}
+      {rightDecorations}
+    </Link>
   )
 }
