@@ -20,7 +20,11 @@ module.exports = {
       '6xl': '7rem',
       '7xl': '8rem',
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        slide: 'inset 0 -50px 0 0',
+      },
+    },
     colors: {
       purple: '#C654B8',
       primary: '#6F6CD9',
