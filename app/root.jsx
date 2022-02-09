@@ -9,6 +9,7 @@ import {
 } from 'remix'
 
 import chrisesCss from '~/styles/chrises.css'
+import { Nav } from '~/components'
 
 export function meta() {
   return { title: 'Christofer Flores' }
@@ -59,8 +60,11 @@ function Document({ children, title }) {
         <Links />
       </head>
       <body>
-        <main className="bg-black text-white h-screen overflow-hidden">
-          {children}
+        <main className="bg-black text-white max-h-screen h-screen overflow-hidden py-4">
+          <div className="container mx-auto">
+            <Nav />
+            {children}
+          </div>
         </main>
         <ScrollRestoration />
         <Scripts />
