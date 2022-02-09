@@ -21,10 +21,11 @@ export default function Index() {
       <div className="flex items-center mt-3">
         <div className="flex flex-col flex-1 pr-5">
           <p className="text-sm font-light mb-10">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Aspernatur, quaerat alias cumque debitis eius dolores!
+            #BugMaker | #SurfingWaves | #Nerdy
+            <br />
+            #SunLover | #EnjoyingLife
           </p>
-          <Button warning>Check it out</Button>
+          <Button warning>Want to contact me?</Button>
         </div>
 
         <div className="flex-1 flex flex-col">
