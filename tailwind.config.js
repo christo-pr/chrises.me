@@ -4,7 +4,21 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['"Ubuntu Mono"', 'monospace'],
+      sans: ['"Fira Code"', 'monospace'],
+    },
+    fontSize: {
+      xs: '1rem',
+      sm: '1.5rem',
+      tiny: '1.875rem',
+      base: '2rem',
+      lg: '3.125rem',
+      xl: '3.25rem',
+      '2xl': '3.5rem',
+      '3xl': '3.875rem',
+      '4xl': '3.25rem',
+      '5xl': '6rem',
+      '6xl': '7rem',
+      '7xl': '8rem',
     },
     extend: {},
     colors: {

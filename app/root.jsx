@@ -16,7 +16,15 @@ export function meta() {
 }
 
 export function links() {
-  return [{ rel: 'stylesheet', href: chrisesCss }]
+  return [
+    { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap',
+    },
+    { rel: 'stylesheet', href: chrisesCss },
+  ]
 }
 
 export default function App() {
