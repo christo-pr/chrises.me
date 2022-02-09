@@ -4,14 +4,20 @@ import { Button, Decoration } from '~/components'
 export default function Index() {
   return (
     <div className="flex flex-col">
-      <Link to="/coding" className="text-7xl text-center">
+      <Link
+        to="/coding"
+        className="text-7xl text-center border-b border-white hover:text-primary transition-colors"
+      >
         <Decoration text="{" purple />
         <Decoration text="==>" success />
         code
         <Decoration text="<==" success />
         <Decoration text="}" purple />
       </Link>
-      <Link to="/projects" className="text-7xl text-center">
+      <Link
+        to="/projects"
+        className="text-7xl text-center border-b border-white hover:text-primary transition-colors"
+      >
         <Decoration text="..." warning />
         <Decoration text="{" purple />
         projects
@@ -29,11 +35,17 @@ export default function Index() {
         </div>
 
         <div className="flex-1 flex flex-col">
-          <Link to="/work" className="text-7xl">
+          <Link
+            to="/work"
+            className="text-7xl border-b border-white hover:text-primary transition-colors"
+          >
             work
             <Decoration text=" **" purple />
           </Link>
-          <Link to="/surfing" className="text-7xl">
+          <Link
+            to="/surfing"
+            className="text-7xl hover:text-primary transition-colors"
+          >
             <Decoration text="++" success />
             surfing
             <Decoration text="++" success />
