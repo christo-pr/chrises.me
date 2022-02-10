@@ -1,17 +1,17 @@
 import { Link } from 'remix'
 
+import Logo from '~/assets/logo.png'
+
 export function Nav() {
   return (
     <header className="flex justify-between mb-16 px-5 md:px-0">
-      <div>
-        <Link to={'/'}>logo</Link>
-      </div>
-      <div>
-        <ul className="flex gap-10">
-          <li>Menu 1</li>
-          <li>Menu 2</li>
-        </ul>
-      </div>
+      <Link
+        to={'/'}
+        className="flex items-center flex-grow-0 gap-2 hover:text-primary transition-colors"
+      >
+        <img src={Logo} alt="Chrises.me" className="h-10 w-10" />
+        <span className="hidden lg:block">Christofer Flores</span>
+      </Link>
       <div>social</div>
     </header>
   )
