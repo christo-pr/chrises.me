@@ -14,20 +14,23 @@ export default function Index() {
 
       {/* Projects Link */}
       <Link to="projects" withBorder>
-        <Decoration text="..." warning />
+        <Decoration text=".." warning />
         <Decoration text="{" purple />
         projects
         <Decoration text="}" purple />
-        <Decoration text="..." warning />
+        <Decoration text=".." warning />
       </Link>
 
-      <div className="flex items-center mt-3">
+      <div className="flex items-center">
         {/* Contact Form */}
-        <Contact />
+        <div className="hidden lg:block">
+          <Contact />
+        </div>
 
         {/* Work & Misc Links */}
         <div className="flex-1 flex flex-col">
           <Link to="work" withBorder>
+            <Decoration text="** " purple />
             work
             <Decoration text=" **" purple />
           </Link>

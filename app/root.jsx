@@ -68,7 +68,7 @@ function Document({ children, title }) {
         <Links />
       </head>
       <body>
-        <main className="bg-black text-white max-h-screen h-screen overflow-hidden py-4">
+        <main className="bg-black text-white max-h-screen h-screen overflow-x-hidden py-4">
           <div className="container mx-auto">
             <Nav />
             {children}
