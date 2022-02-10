@@ -1,7 +1,11 @@
-export function ProgressBar({}) {
+export function ProgressBar({ value, color, label }) {
   return (
-    <div className={`h-6 rounded border border-success flex items-center px-1`}>
-      <div className="h-4 w-full bg-primary"></div>
+    <div className={`h-10 rounded bg-white bg-opacity-10 flex items-center`}>
+      <div
+        className={`h-full flex items-center justify-center text-black rounded ${value} ${color}`}
+      >
+        {label}
+      </div>
     </div>
   )
 }
