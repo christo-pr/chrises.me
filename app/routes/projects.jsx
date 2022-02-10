@@ -29,10 +29,50 @@ export default function Projects() {
     icon: projectsImages[p],
     ...projectSettings[p],
   }))
+  const blogpost = [
+    {
+      title: 'Create a nice-looking input range with only CSS!!',
+      url: 'https://dev.to/christo_pr/create-a-nice-looking-input-range-with-only-css-4oa2',
+    },
+    {
+      title: 'Render dangerous content with React',
+      url: 'https://dev.to/christo_pr/render-dangerous-content-with-react-2j7j',
+    },
+    {
+      title: 'RedwoodJS: Intro & Web Side',
+      url: 'https://dev.to/christo_pr/redwoodjs-intro-web-side-3i8j',
+    },
+    {
+      title: 'Beacon API',
+      url: 'https://dev.to/christo_pr/beacon-api-1g7p',
+    },
+    {
+      title: 'How do I write React',
+      url: 'https://dev.to/christo_pr/how-do-i-write-react-4pan',
+    },
+    {
+      title: 'Do you want to be a senior?',
+      url: 'https://dev.to/christo_pr/you-really-want-to-be-a-senior-57g6',
+    },
+  ]
 
   return (
     <div className="px-5 md:px-0">
-      <h2 className="text-base lg:text-xl">Things I've done:</h2>
+      <h2 className="text-base lg:text-xl border-b">My BlogPost</h2>
+      <ul className="list-disc pl-14 my-8">
+        {blogpost.map((blog) => (
+          <li className="text-xs md:text-sm">
+            <a
+              href={blog.url}
+              target="_blank"
+              className="hover:text-primary hover:underline transition-colors"
+            >
+              {blog.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <h2 className="text-base lg:text-xl border-b">What I've Worked On</h2>
       <ul className="grid grid-cols-1 md:grid-cols-3 auto-rows-min gap-20 mt-20">
         {projects.map((p) => (
           <li key={p.name} className="bg-white bg-opacity-10 rounded pb-4">
