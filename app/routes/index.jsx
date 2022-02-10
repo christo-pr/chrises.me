@@ -41,6 +41,11 @@ export default function Index() {
           </Link>
         </div>
       </div>
+
+      {/* Contact Form */}
+      <div className="block lg:hidden text-center mt-10">
+        <Contact />
+      </div>
     </div>
   )
 }
