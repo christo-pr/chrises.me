@@ -34,7 +34,7 @@ export default function Index() {
             work
             <Decoration text=" **" purple />
           </Link>
-          <Link to="surfing">
+          <Link to="https://www.instagram.com/waquenasay" external>
             <Decoration text="++" success />
             surfing
             <Decoration text="++" success />
