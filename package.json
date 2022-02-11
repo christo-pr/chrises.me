@@ -10,6 +10,7 @@
     "dev:css": "tailwindcss -o ./app/styles/chrises.css --watch",
     "dev:js": "cross-env NODE_ENV=development netlify dev",
     "postinstall": "remix setup node",
+    "preinstall": "npm run dev:css",
     "start": "remix-serve build"
   },
   "dependencies": {
