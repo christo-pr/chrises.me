@@ -60,8 +60,8 @@ export default function Projects() {
     <div className="px-5 md:px-0">
       <h2 className="text-base lg:text-xl border-b">My BlogPost</h2>
       <ul className="list-disc pl-14 my-8">
-        {blogpost.map((blog) => (
-          <li className="text-xs md:text-sm">
+        {blogpost.map((blog, i) => (
+          <li key={i} className="text-xs md:text-sm">
             <a
               href={blog.url}
               target="_blank"
