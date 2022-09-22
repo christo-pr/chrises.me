@@ -1,6 +1,16 @@
 node_modules
 /.cache
-/netlify/functions/server/build
 /public/build
 /.netlify
 app/styles/chrises.css
+
+.cache
+.env
+.vercel
+.output
+
+/build/
+/public/build
+/api/index.js
+/api/index.js.map
+/api/_assets/

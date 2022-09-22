@@ -1,4 +1,4 @@
-import { Link } from 'remix'
+import { Link } from '@remix-run/react'
 import { VscGithub as GHIcon, VscTwitter as TwitterIcon } from 'react-icons/vsc'
 import { DiNpm as NpmIcon } from 'react-icons/di'
 
