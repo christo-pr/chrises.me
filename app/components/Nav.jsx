@@ -11,7 +11,7 @@ export function Nav() {
         to={'/'}
         className="flex items-center flex-grow-0 gap-2 hover:text-primary transition-colors"
       >
-        <img src={Logo} alt="Chrises.me" className="h-10 w-10" />
+        <img src={Logo} alt="Chrises.me" className="w-14" />
         <span className="hidden lg:block">Christofer Flores</span>
       </Link>
       <div>
